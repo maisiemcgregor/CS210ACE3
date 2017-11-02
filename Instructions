@@ -1,0 +1,9 @@
+#define HAL 0
+#define LDR 1
+#define STO 2
+#define SUB 3
+#define ADD 4
+#define INP 5
+#define OUT 6
+#define SKP 7
+#define JMP 8
