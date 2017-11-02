@@ -1,4 +1,4 @@
-#define HAL 0
+#define HLT 0
 #define LDR 1
 #define STO 2
 #define SUB 3
