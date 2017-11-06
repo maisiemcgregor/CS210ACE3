@@ -34,11 +34,30 @@ if opC = 1011 call MUL
 _________
 INSTRUCTIONS
 
-HLT (HALT) 
+HLT (Halt) 
 halt flag = 1   //mot sure if necessary
 return
 
-LDR (LOAD REGISTER)
+LDR (Load Register)
 AC = operand
 
-STO (STORE)
+STO (Store)
+
+SUB (Subtract)
+
+ADD (Add)
+
+INP (Input)
+
+OUT (Output)
+
+SKP (Skip)
+
+JMP (Jump)
+
+___
+AND (And)
+
+OR (Or)
+
+MUL (Multiply)
