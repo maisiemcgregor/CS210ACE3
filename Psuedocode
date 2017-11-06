@@ -35,6 +35,7 @@ _________
 INSTRUCTIONS
 
 HLT (Halt) 
+  //We might not even need a flag. If we use a while loop, we can have the program continue as long as the instruction isn't HLT. -Ryan
 halt flag = 1   //mot sure if necessary
 return
 
