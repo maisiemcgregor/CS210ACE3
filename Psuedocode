@@ -1,0 +1,34 @@
+Functions
+
+READ FILE
+>
+TAKE INPUT
+>
+_________
+Call Function
+//I think a switch statement would be good to use here, though I have not used them in C yet
+takes current oppcode
+if opC = 0000 call HLT
+if opC = 0001 call LDR
+if opC = 0010 call STO
+if opC = 0011 call SUB
+if opC = 0100 call ADD
+if opC = 0101 call INP
+if opC = 0110 call OUT
+if opC = 0111 call SKP
+if opC = 1000 call JMP
+_
+if opC = 1001 call AND
+if opC = 1010 call OR
+if opC = 1011 call MUL
+_________
+INSTRUCTIONS
+
+(HLT) HALT op0000 
+halt flag = 1   //mot sure if necessary
+return
+
+(LDR) LOAD REGISTER
+AC = operand
+
+(STO) STORE op0001
