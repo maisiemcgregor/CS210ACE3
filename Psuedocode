@@ -1,14 +1,17 @@
 Functions
 
+MAIN
+
+
 READ FILE
->BEFORE READING
-check length of file: 
-  if each instruction is of length 12
-  then (doclength % 12) should be equal to 0
-AND
-check all values are either 0 or 1   (unless we plan to use hex values, I'm not sure)
-  go through each character (are we reading the file as chars of ints? what is easier?)
-  if current char is not a '0' or '1' then invalid file.
+  check length of file: 
+    if each instruction is of length 12
+    then (doclength % 12) should be equal to 0
+  and
+  check all values are either 0 or 1   (unless we plan to use hex values, I'm not sure)
+    go through each character (are we reading the file as chars of ints? what is easier?)
+    if current char is not a '0' or '1' then invalid file.
+
 TAKE INPUT
 >
 User should enter a binary number of length 12 
@@ -37,25 +40,42 @@ INSTRUCTIONS
 HLT (Halt) 
   //We might not even need a flag. If we use a while loop, we can have the program continue as long as the instruction isn't HLT. -Ryan
 halt flag = 1   //mot sure if necessary
-return
+IP++
 
 LDR (Load Register)
 AC = operand
+IP++
 
 STO (Store)
+  current operand = AC
 
 SUB (Subtract)
+  int carry;
+  AC = AC - (contents of current address)
+  (I think we also need to worry about over/underflow)
+  (also in 2's complement)
 
 ADD (Add)
-
+  int carry;
+  AC = AC + (contents of current address)
+  (same issues with SUB)
+  
 INP (Input)
+  scanf / fgets  
+  AC = inputted value 
+  (also need to validate and check the inputted value is legal)
 
 OUT (Output)
+  print AC
 
 SKP (Skip)
+  if (condition of opcode for IP+1 meets some condition)
+    IP++
+  else IP = (IP + 2)  //next instruction is skipped
+  //reverse this if the condition should be false
 
 JMP (Jump)
-
+  IP = operand
 ___
 AND (And)
 
