@@ -1,11 +1,19 @@
 Functions
 
 READ FILE
->
+>BEFORE READING
+check length of file: 
+  if each instruction is of length 12
+  then (doclength % 12) should be equal to 0
+AND
+check all values are either 0 or 1   (unless we plan to use hex values, I'm not sure)
+  go through each character (are we reading the file as chars of ints? what is easier?)
+  if current char is not a '0' or '1' then invalid file.
 TAKE INPUT
 >
+User should enter a binary number of length 12 
 _________
-Call Function
+CALL_INSTRUCTION
 //I think a switch statement would be good to use here, though I have not used them in C yet
 takes current oppcode
 if opC = 0000 call HLT
@@ -21,14 +29,16 @@ _
 if opC = 1001 call AND
 if opC = 1010 call OR
 if opC = 1011 call MUL
+
+//something should happen if '1100' '1101' '1110' '1111' is the opcode
 _________
 INSTRUCTIONS
 
-(HLT) HALT op0000 
+HLT (HALT) 
 halt flag = 1   //mot sure if necessary
 return
 
-(LDR) LOAD REGISTER
+LDR (LOAD REGISTER)
 AC = operand
 
-(STO) STORE op0001
+STO (STORE)
