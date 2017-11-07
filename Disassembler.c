@@ -12,7 +12,7 @@ void convertDisplay_assembly(void); /*change from void later*/
 void user_mem_input(void); /*not sure if return type is void here*/
 void load_file_instruction(void); /*Is void the parameter here, or can we use a file as parameter?*/
 
-/*From part 3. Document says "Write	a C	function" so I think it only needs the one function.*/
+/*From part 3. Document says "Write a C	function" so I think it only needs the one function, with assistance from the above auxiliaries.*/
 void fetch_decode_execute(void);
 
 /*main is part 4*/
