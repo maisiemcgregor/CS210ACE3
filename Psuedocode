@@ -1,7 +1,7 @@
 Functions
 
 MAIN
-
+  I assume there should be some prompt asking if they wish to read from file or take their input.
 
 READ FILE
   check length of file: 
@@ -13,8 +13,9 @@ READ FILE
     if current char is not a '0' or '1' then invalid file.
 
 TAKE INPUT
->
-User should enter a binary number of length 12 
+  User should enter a binary number of length 12 
+  Check input is valid,
+  Continue until the user types some other character if they are finished adding input.
 _________
 CALL_INSTRUCTION
 //I think a switch statement would be good to use here, though I have not used them in C yet
