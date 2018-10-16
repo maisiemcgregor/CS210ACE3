@@ -1,0 +1,38 @@
+Question 1
+a.
+#define HLT 0
+#define LDR 1
+#define STO 2
+#define SUB 3
+#define ADD 4
+#define AND 5
+#define OR 6
+#define SKP 7
+#define JMP 8
+#define INP 9
+#define OUT 10
+#define MUL 11
+#define ADDI 12
+#define SUBI 13
+#define SLL 14
+#define SRL 15
+
+
+
+b. Propose at least three more instructions. Provide an opcode (Binary & Mnemonic) and a description
+for each of the newly proposed instructions.
+(2 Marks)
+
+Binary  Mnemonic    Description
+0101    AND  
+0110    OR   
+1011    MUL  
+1100    ADDI 
+1101    SUBI 
+1110    SLL  
+1111    SRL 
+
+
+c. Provide a detailed description of how your Skipcond instruction should work.
+(2 Marks)
+Load the next instruction into the memory address register and perform dissassembly on this instruction.

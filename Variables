@@ -1,0 +1,10 @@
+Variables
+
+int memory[4000];
+int register;
+int accumulator;
+int instructionRegister;
+int memoryBufferRegister;
+int programCounter;
+int memoryAddressRegister;
+

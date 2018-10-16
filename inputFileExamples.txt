@@ -1,0 +1,46 @@
+#Arithmetic Test	AC
+0001000000001011	11  //load 11 to AC
+0011000000001001	2   //Subtract 9 from AC,
+0100000000000011	5   //Add 3
+0011000000001000	-3  //Subtract 8
+1010000000000000 	    //output AC
+0000000000000000 	    //halt program
+
+#Simple Test		AC
+0001000000000100 	4   //load 4 to AC			
+0011000000000001 	3   //subtract 1 from AC	
+0110000000000000    	    //output AC
+0000000000000000 	    //halt program
+
+#Loop-Until Test
+0001000000000111	//load 7 to AC
+0110000000000000 	//output AC
+0000000000000000	//instruction
+0011000000000001	//subtract 1 from AC
+0111000000000000	//skip next instruction, if AC is not 0  
+1000000000000001	//jump to the second instruction (instruction[1]).
+0000000000000000	//halt
+					//output should be: 7 6 5 4 3 2 1 0
+					//really not sure about the skip and jump instructions
+
+____________________
+#define HLT 0
+#define LDR 1
+#define STO 2
+#define SUB 3
+#define ADD 4
+#define AND 5   9
+#define OR 6    10
+#define SKP 7
+#define JMP 8
+#define INP 9   5
+#define OUT 10  6
+
+
+
+
+#define MUL 11
+____________________
+1000000000000001
+0000000000000000
+
